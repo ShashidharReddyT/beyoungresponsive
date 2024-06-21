@@ -1,0 +1,130 @@
+/* Add these styles to your Wishlist.css or any other appropriate stylesheet */
+
+.wishlist-section {
+    padding: 0px;
+}
+
+.wishlist-heading {
+    font-size: 24px;
+    margin: 0px 0px 0px 50px;
+}
+
+.wishlist-product-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.wishlist-product-info {
+    font-size: 14px;
+    color: wheat;
+    margin: 4px 0;
+    margin-left: 10px;
+}
+
+.wishlist-items {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.wishlist-item {
+    background-color: rgb(18 18 17);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 265px;
+    transition: transform 0.2s;
+    border: 2px solid #292925;
+    color: wheat;
+}
+
+.wishlist-item:hover {
+    transform: scale(1.05);
+}
+
+.wishlist-product-figure {
+    position: relative;
+    width: 265px;
+    height: 330px;
+    margin-left: 0px;
+}
+
+.wishlist-button {
+    position: relative;
+    /* width: 25px; */
+    height: 35px;
+    top: 68px;
+    border-radius: 50px;
+    right: -115px;
+    z-index: 1;
+    background-color: white;
+}
+
+.wishlist-zoomIn1 {
+    margin-left: 50px;
+}
+
+.wishlist-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.remove-button,
+.add-to-cart-button {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #e8ee0a;
+    border: 1px solid #090909;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.remove-button {
+    color: #ff0000;
+    margin-left: 10px;
+}
+
+.add-to-cart-button {
+    color: #007bff;
+}
+
+.cartitemsheading {
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 380px) {
+    .wishlist-button {
+        position: relative;
+        right: -95px;
+    }
+
+    .whilistmobile {
+        margin-left: 85px;
+    }
+
+    .wishlist-heading {
+        font-size: 24px;
+        margin: 0px 0px 0px -45px;
+    }
+
+    .wishlist-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+        margin-left: -90px;
+    }
+}

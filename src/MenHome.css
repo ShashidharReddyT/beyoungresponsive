@@ -1,0 +1,71 @@
+.men-home {
+    list-style: none;
+    padding: 0;
+    gap: 40px;
+    display: grid;
+    overflow-x: auto;
+    grid-auto-flow: column;
+    margin-top: 35px;
+    margin-left: 90px;
+    transition: transform 0.5s ease;
+}
+
+.for-shirts-pants5 {
+    width: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.imagemenhome {
+    width: 210px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.imageabovemen {
+    height: 147px;
+    margin-left: 186px;
+    margin-top: 60px;
+
+}
+
+.for-men {
+    margin-top: 60px;
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(248, 235, 39, 0.00) 0%, #F8EB27 48.11%, rgba(248, 235, 39, 0.00) 100%);
+    width: 85%;
+    height: 60px;
+    justify-content: center;
+    font-family: "Lato", Arial;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* Add media queries for responsive design */
+@media screen and (max-width: 780px) {
+
+
+    .for-men {
+        margin-left: 50px;
+        /* Adjust margin for smaller screens */
+        height: 40px;
+        /* Adjust height for smaller screens */
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+
+    .for-men {
+        margin-left: 20px;
+        /* Adjust margin for smaller screens */
+        height: 40px;
+        /* Adjust height for smaller screens */
+    }
+
+
+}

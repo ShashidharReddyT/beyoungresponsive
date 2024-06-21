@@ -1,0 +1,110 @@
+.my-account-container {
+    display: flex;
+    margin: 3rem 10%;
+  
+    gap: 4rem;
+  }
+  .my-ac-left-section {
+    flex: 1;
+    /* background-color: blueviolet; */
+    border: 0.5px solid #d5d5d5;
+  }
+  .my-ac-right-section {
+    flex: 4;
+    /* background-color: blueviolet; */
+  }
+  .upper-sec {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #d5d5d5;
+    
+  }
+  .profile-btn-collaps {
+    border: none;
+    outline: none;
+    background-color: #d5d5d5;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .lower-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+    
+    > nav {
+      display: flex;
+      flex-direction: column;
+      > a {
+        border-bottom: 1px solid #d5d5d5;
+        padding: 1rem 0;
+        color: gray;
+        text-decoration: none;
+      }
+    }
+    >button{
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background-color: #FEEB00;
+      padding: 0.7rem;
+      text-transform: uppercase;
+      font-weight:560;
+      cursor: pointer;
+      &:focus{
+          outline: none;
+      }
+      &:hover{
+          background-color: #feed00bd;
+      }
+    }
+  }
+  .lower-sec nav a.active{
+      color: black;
+      font-weight: 600;
+  }
+  
+  .my-profile-section{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  .update-btn{
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background-color: black;
+      border-radius: 5px;
+      padding: 0.7rem;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1rem;
+  }
+  
+  
+  @media (max-width:768px) {
+      .my-account-container{
+          flex-direction: column;
+          margin: 3rem 5%;
+          >section{
+              flex: 1;
+          }
+      }
+      .lower-sec{
+          display: none;
+          
+      }
+      .my-ac-left-section .collaps-active{
+          display: flex;   
+          
+      }
+  }

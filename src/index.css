@@ -1,0 +1,20 @@
+button {
+  font-family: arial, lato;
+  background-color: #080808;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+}

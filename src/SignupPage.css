@@ -1,0 +1,129 @@
+.login-container {
+    width: 400px;
+}
+
+.image-close-bar {
+    padding: 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.login-image {
+    margin: 0px 0px;
+    top: 0px;
+    max-width: 400px;
+    height: 200px;
+}
+
+.btn-close {
+    border: none;
+    background: none;
+    font-size: 18px;
+    top: 10px;
+    margin-top: 0px;
+    color: #ababab;
+    margin-left: -30px;
+    margin-top: -150px;
+    cursor: pointer;
+}
+
+.welcome-header {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    width: 80%;
+    padding-top: 18px;
+    color: black;
+    margin-left: 12px;
+}
+
+.welcome-header-small {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(40, 44, 63, 0.8);
+}
+
+.span-offer-text {
+    font-size: 12px;
+    display: block;
+    margin-top: 8px;
+    color: rgba(40, 44, 63, 0.8);
+}
+
+.login-container form {
+    width: 85%;
+    margin: auto;
+    margin-top: 22px;
+}
+
+.form-in {
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.form-in input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    font-size: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-in input[type="password"] {
+    margin-top: 10px;
+}
+
+.form-in input[type="name"] {
+    margin-bottom: 10px;
+}
+
+.form-in button {
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 90%;
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #51cccc;
+    border-radius: 12px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.floating-label {
+    padding: 6px 7px 10px 10px;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 0.5;
+}
+
+sup {
+    color: #e02b27;
+}
+
+p.heading-bottom {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #a1a1a1;
+    cursor: pointer;
+}
+
+p.heading-bottom:hover {
+    color: black;
+}
+
+.loginimage {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}

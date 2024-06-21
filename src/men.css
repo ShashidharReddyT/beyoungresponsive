@@ -1,0 +1,305 @@
+.men-container {
+    margin-left: 125px;
+    margin-top: 120px;
+}
+
+p.heading-men {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 45px;
+    color: #343434;
+    border-bottom: 1px solid #f9eb28;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.heading-men1 {
+
+    font-size: 16px;
+    text-align: left;
+
+    margin-left: 45px;
+    color: #343434;
+    display: inline-block;
+    margin-top: -3px;
+    height: 41px;
+}
+
+.heading-menfilter {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    color: #343434;
+    border-bottom: 1px solid #f9eb28;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.for-shirts-pants {
+    display: grid;
+    text-align: center;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 55px;
+    margin-top: -37px;
+}
+
+figure {
+    overflow: hidden;
+
+}
+
+.for-shirts-pants img {
+    display: block;
+    width: 291px;
+    height: 386px;
+    text-align: center;
+    /* padding: 5px 5px; */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#zoom-In {
+    margin: 0px;
+    margin-left: -50px;
+}
+
+.for-shirts-pants #zoom-In img {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.for-shirts-pants #zoom-In:hover img {
+    transform: scale(1.5);
+}
+
+.men-container {
+    display: flex;
+}
+
+
+.men-clothes {
+    width: 75%;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.womenbanner {
+    margin-bottom: -150px;
+    width: 100%;
+    margin-top: 117px;
+}
+
+.bannermen {
+    margin-top: 150px;
+    width: 310px;
+    height: 150px;
+    margin-bottom: -150px;
+}
+
+.bannermen .link:hover {
+    background-color: white;
+}
+
+.banners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.productheadingg {
+    margin-left: -8px;
+    text-align: start;
+    font-weight: 600;
+    overflow: hidden;
+    width: 270px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.productheadinggg {
+    margin-left: -8px;
+    text-align: start;
+    color: #7d7777;
+    font-weight: 100;
+    margin-top: -10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* wishlist css */
+/* Add this style to your existing CSS file or create a new one */
+.product-figure {
+    position: relative;
+}
+
+
+.popup-modal {
+    display: block;
+    position: fixed;
+    top: 25%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    background-color: #ffdd00;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    z-index: 1000;
+    font-weight: 900;
+    font-family: system-ui;
+}
+
+.popup-modal p {
+    margin-bottom: 10px;
+}
+
+.popup-modal button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-modal button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Responsive CSS for 380px */
+@media screen and (max-width: 440px) {
+    .men-container {
+        margin-left: 0;
+    }
+
+    .womenbanner {
+        margin-bottom: -170px;
+        width: 100%;
+        margin-top: 108px;
+        margin-left: 20px;
+        height: auto;
+    }
+
+    .for-shirts-pants {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        width: 100%;
+        max-width: 800px;
+        /* Set your desired max-width */
+        margin: 0 auto;
+        /* Center the container */
+    }
+
+    .men-clothes {
+        width: 100%;
+    }
+
+    .heading-men {
+        margin-left: 15px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .heading-men1 {
+        margin-left: 15px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .filter-buttons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        /* Set the background color for the filter buttons */
+        box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        /* Add a subtle shadow */
+        padding: 10px;
+        /* Add padding to the buttons */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .filter-buttons button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .for-shirts-pants img {
+        display: block;
+        width: 100%;
+        /* Make images fill their container */
+        max-width: 100%;
+        /* Set max-width to 100% */
+        height: auto;
+        /* Maintain aspect ratio */
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .productheadingg,
+    .productheadinggg {
+        max-width: 100%;
+        /* Set max-width to 100% */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .product-container {
+        margin-left: 85px;
+    }
+
+    p.heading-men {
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: left;
+        font-weight: 600;
+        margin-left: 76px;
+        color: #343434;
+        border-bottom: 1px solid #f9eb28;
+        display: inline-block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p.heading-men1 {
+        font-size: 16px;
+        text-align: left;
+        margin-left: 77px;
+        color: #343434;
+        display: inline-block;
+        margin-top: -3px;
+        height: 41px;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .banners {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 45px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .popup-modal {
+        width: 60%;
+        /* margin: 0 auto 0 87px; */
+        font-size: 14px;
+        /* margin-left: 8px; */
+        display: flex;
+    }
+}

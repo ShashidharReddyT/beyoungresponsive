@@ -1,0 +1,44 @@
+/* modal container */
+
+.auth-modal {
+  padding: 1rem;
+  margin: 0.25rem;
+  width: 9rem;
+  background-color: #fff;
+  height: auto;
+  position: absolute;
+  top: 65px;
+  right: 110px;
+  border-radius: 0.25rem;
+  border: none;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.link-container{
+ 
+  display: flex;
+  flex-direction: column;
+}
+.link-direction{
+  text-transform: uppercase;
+  padding: 14px 0px 14px 0px;
+  font-size: small;
+  color: #000;
+}
+
+.auth-modal-subdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f5f5f5;;
+}
+.auth-modal-subdiv h5{
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.auth-modal-subdiv button{
+  background: none;
+  cursor: pointer;
+  border: none;
+}

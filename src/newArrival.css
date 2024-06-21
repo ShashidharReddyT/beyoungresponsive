@@ -1,0 +1,175 @@
+.big-saving-zone .saving-zone1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #343434;
+  border-bottom: 1px solid #f9eb28;
+  text-align: left;
+  margin: 60px 50px 10px 100px;
+
+  display: inline-block;
+}
+
+.big-saving1 {
+  width: 266px;
+  border-radius: 20px;
+}
+
+.saving-zone-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.saving-zone-2 button {
+  width: 50px;
+  height: 80px;
+  border: none;
+
+}
+
+/* new arrival */
+.previmage {
+  position: absolute;
+  margin-left: 15px;
+}
+
+.nextimage {
+  position: absolute;
+  margin-left: -45px;
+}
+
+/* big savingzone */
+.previmage1 {
+  position: absolute;
+  margin-left: 23px;
+}
+
+.nextimage1 {
+  position: absolute;
+  margin-left: -55px;
+}
+
+/* -------- */
+.newarrivalimg {
+  width: 270px;
+  height: 349px;
+  border-radius: 10px;
+}
+
+.newarrival a {
+  text-decoration: none;
+  /* Remove underline */
+  color: inherit;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Inherit color from parent */
+}
+
+.newarrrivalheading {
+  margin-top: -45px;
+  text-decoration: none;
+  position: absolute;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 10px;
+  border-left: 4px solid #ffdd00;
+  padding: 5px;
+  height: 20px;
+
+}
+
+.scolll {
+  margin-top: 80px;
+}
+
+.scrolllimage {
+  width: 75%;
+  margin-left: 188px;
+}
+
+
+@media screen and (max-width: 440px) {
+  .big-saving-zone {
+    padding: 0 10px;
+    /* Adjust the padding as needed */
+  }
+
+  .big-saving-zone .headaing-zone {
+    margin-left: 0;
+    text-align: center;
+    /* Center the heading */
+  }
+
+  .saving-zone-2 {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newarrivalimg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .scrolllimage {
+    margin-left: 0;
+  }
+
+  .previmage {
+    margin-left: 10px;
+    width: 15px;
+  }
+
+  .nextimage {
+    position: absolute;
+    margin-left: -24px;
+    width: 15px;
+  }
+
+  .newarrrivalheading {
+    margin-top: -17px;
+    text-decoration: none;
+    position: absolute;
+    font-size: 7px;
+    font-weight: 400;
+    /* margin-left: 10px; */
+    border-left: 3px solid #ffdd00;
+    padding: 2px;
+    height: 7px;
+    color: #ee0908;
+  }
+
+  .previmage1 {
+    position: absolute;
+    margin-left: 18px;
+  }
+
+  .nextimage1 {
+    position: absolute;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .scolll {
+    margin-top: 40px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .scrolllimage {
+    width: 100%;
+    /* Make the image responsive */
+    margin-left: 0;
+    /* Center the image on smaller screens */
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .scolll {
+    margin-top: 20px;
+    /* Adjust margin for even smaller screens */
+  }
+}

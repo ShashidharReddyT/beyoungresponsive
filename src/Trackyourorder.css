@@ -1,0 +1,187 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.trackimage {
+    width: 100%;
+    margin-top: 118px;
+}
+
+.heading {
+    padding: 10px;
+    display: inline-block;
+    background: #ff0;
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+}
+
+.tracking-order-details {
+    background: #f1f1f1;
+    padding: 30px 160px;
+    margin-top: -20px;
+}
+
+.tracking-order-details .order-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 0;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.tracking-order-details .order-checkbox .order-slect {
+    width: 30%;
+    text-align: left;
+}
+
+.orderselect {
+    display: flex;
+    text-align: left;
+    width: 215px;
+}
+
+.tracking-order-details strong {
+    display: block;
+    padding-bottom: 15px;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+}
+
+.tracking-order-details .order-checkbox .order-slect label {
+    display: flex;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.tracking-order-details .order-checkbox .order-slect label:last-child {
+    margin-left: 15px;
+}
+
+.tracking-order-details .order-checkbox .tracking-id {
+    width: 68%;
+}
+
+.tracking-order-details .order-checkbox .order-slect {
+    text-align: left;
+}
+
+.tracking-order-details .order-checkbox .order-slect label input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.tracking-order-details p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.tracking-order-details strong {
+    display: block;
+    padding-bottom: 15px;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+}
+
+.tracking-order-details .order-checkbox .tracking-id input {
+    color: #c9c9c9;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tracking-order-details .order-checkbox .tracking-id button {
+    padding: 10px 25px;
+    color: #fff;
+    background: #51cccc;
+    border: 0;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.submitt {
+    display: flex;
+    width: 400px;
+}
+
+.heading-support {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #fff;
+    background: #000;
+    padding: 30px 0;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+
+
+/* Responsive CSS for 380px */
+@media only screen and (max-width: 440px) {
+    .trackimage {
+        margin-top: 120px;
+        /* Adjust margin-top for smaller screens */
+    }
+
+    .tracking-order-details {
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .tracking-order-details .order-checkbox {
+        flex-direction: column;
+        /* Stack checkboxes vertically */
+        gap: 20px;
+        /* Add some spacing between elements */
+    }
+
+    .tracking-order-details .order-checkbox .order-slect,
+    .tracking-order-details .order-checkbox .tracking-id {
+        width: 100%;
+        /* Full width for these elements on smaller screens */
+        margin-bottom: 20px;
+        /* Add some spacing between elements */
+    }
+
+    .tracking-order-details .order-checkbox .tracking-id input {
+        width: 92%;
+        margin-bottom: 20px;
+    }
+}
+
+.tracking-order-details .order-checkbox .tracking-id button {
+    margin-left: 0;
+    /* Remove margin for button */
+}
+
+.submitt {
+    flex-direction: column;
+    /* Stack input and button vertically */
+    width: 100%;
+    /* Full width for this container */
+}
+
+.heading-support {
+    font-size: 24px;
+    /* Adjust font size for smaller screens */
+    padding: 20px 0;
+    /* Adjust padding for smaller screens */
+}

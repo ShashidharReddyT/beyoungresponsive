@@ -1,0 +1,118 @@
+.product-container {
+  margin-left: 70px;
+  margin-right: 100px;
+}
+.men-clothing {
+  display: flex;
+  gap: 200px;
+}
+.heading-men-clothing {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  margin: 25px 0px 0px 0px;
+}
+.men-clothing-main {
+  margin-left: 312px;
+  margin-bottom: 0px;
+  width: 960px;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+.men-clothing-main div p {
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+.productListContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productCotainerStart {
+  display: flex;
+  flex-direction: column;
+}
+.product-container-male {
+  width: 33%;
+  padding: 10px;
+
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.product-container-male .for-man-image {
+  display: flex;
+}
+.heart-icon {
+  margin-top: 10px;
+  margin-left: -35px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 25px;
+  background: #fff;
+  /* position: absolute; */
+  right: 6px;
+}
+.product-container-male .image-for-male {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.product-container-male .image-for-male:hover {
+  background-image: url("https://www.beyoung.in/api/cache/catalog/products/…_plain_t-shirt_combo_hover_16_08_2023_700x933.jpg");
+}
+.product-container-male h6 {
+  margin: 10px 0px 0px 0px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+}
+
+.for-price-off {
+  text-align: start;
+  text-decoration: none;
+  list-style: none;
+  margin: 20px 0px 0px 0px;
+}
+.inline-elements {
+  display: inline;
+}
+.for-price-off p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.for-price-off span {
+  color: #04ce00;
+  font-size: 13px;
+}

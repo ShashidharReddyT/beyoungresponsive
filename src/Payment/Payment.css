@@ -1,0 +1,67 @@
+.navbarcart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(7, 7, 7);
+  height: 80px;
+  align-items: center;
+  background-color: #ffdd00;
+}
+
+.beyoungglogo {
+  margin-left: 110px;
+  height: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-right {
+  padding: 15px 10px;
+  display: flex;
+  background: #f2f2f2;
+  /* width: 35%; */
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 5px;
+  margin-right: 150px;
+}
+
+@media (max-width: 440px) {
+  .navbarcart {
+    flex-direction: column;
+    /* Stack items vertically */
+    height: auto;
+    /* Adjust height as needed */
+  }
+
+  .beyoungglogo {
+    margin-left: 0;
+    /* Reset margin for smaller screens */
+    margin-bottom: 10px;
+    /* Add bottom margin for spacing */
+  }
+
+  .header-right {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+    padding: 10px 0;
+  }
+}
+
+.css-126nd9x-MuiPaper-root {
+  background-color: lightgoldenrodyellow !important;
+  border: 2px solid rgb(8, 8, 8) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px !important,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px !important,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px !important,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px !important,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+}

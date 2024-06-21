@@ -1,0 +1,34 @@
+.bannersweater {
+    width: 100%;
+    margin-top: 117px;
+}
+
+.bannersweatersub {
+    width: 289px;
+    height: 389px;
+}
+
+.winterwearsub {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: -120px;
+    gap: 10px;
+    margin-left: 153px;
+}
+
+@media screen and (max-width: 440px) {
+    .bannersweatersub {
+        margin-bottom: 20px;
+        /* Adjust margin for better spacing */
+    }
+
+    .winterwearsub {
+        margin-left: 0;
+    }
+
+    .bannersweatersub {
+        width: 204px;
+        height: 389px;
+    }
+}

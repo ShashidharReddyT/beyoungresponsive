@@ -1,0 +1,557 @@
+.navbar {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: #fff;
+  gap: 600px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 28px;
+  width: 100%;
+  padding: 5px;
+  backdrop-filter: blur(30px);
+  border-bottom: 0.1px solid rgb(74, 73, 73);
+  z-index: 3;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+  font-family: system-ui;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  gap: 5px;
+  font-family: lato, arial;
+  align-items: center;
+}
+
+.nav-linksdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dash {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.nav-linkss {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  font-size: 10px;
+}
+
+.navmain {
+  position: fixed;
+  animation: slide-down 0.7s;
+  top: 65px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  justify-content: space-around;
+  font-weight: 500;
+  height: 30px;
+  padding: 15px;
+  padding-left: 30px;
+  backdrop-filter: blur(30px);
+  border-bottom: 0.1px solid rgb(74, 73, 73);
+  z-index: 2;
+}
+
+.navlogo {
+  width: 20px;
+  height: 20px;
+}
+
+.couponcode {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 30px;
+  right: 0;
+  flex-direction: row;
+  background-color: #ffdd00;
+  color: black;
+  z-index: 2;
+}
+
+.navchild {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link1 {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+  font-family: system-ui;
+}
+
+.link1:hover {
+  background-color: #f9eb28;
+}
+
+.logo {
+  height: 40px;
+  padding: 0px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.navtools {
+  display: flex;
+  flex-direction: row;
+}
+
+.navlogos {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.linked {
+  text-decoration: none;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 18px;
+  background-color: #fff;
+  padding: 0.7rem;
+  border: none;
+
+  >input {
+    outline: none;
+    width: 250px;
+    border-radius: unset;
+    border: 0.5px solid #ddc9c9;
+    height: 2rem;
+    padding-left: 3px;
+  }
+
+  >button {
+    background-color: black;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    height: 2.3rem;
+    cursor: pointer;
+
+  }
+}
+
+.badge:after {
+  content: attr(value);
+  font-size: 12px;
+  color: #fff;
+  background-color: #817917;
+  border-radius: 50%;
+  padding: 0 5px;
+  position: relative;
+  left: -8px;
+  top: -10px;
+  opacity: 0.9;
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  vertical-align: -0.0667em;
+}
+
+/* //dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sub-heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 45px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  width: 600px;
+  height: 500px;
+  gap: 80px;
+}
+
+/* Style for the sub-links in the "MEN" dropdown */
+.sub-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Style for the sub-dropdown (if needed) */
+.sub-dropdown {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  z-index: 3;
+}
+
+.dropdown-content:hover .sub-dropdown {
+  display: block;
+}
+
+/* Style for sub-sub-links (if needed) */
+.sub-sub-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  padding-left: 3px;
+  line-height: 30px;
+  font-family: monospace;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dropdownimg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+.headingdropdown {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+/* my account dropdown */
+
+/* Dropdown container */
+.dropdownmyaccount {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn1 {
+  color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-contentmyaccount {
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
+
+/* Links inside the dropdown */
+.dropdown-contentmyaccount a {
+  color: black;
+  padding: 12px 16px;
+  width: 150px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  background-color: antiquewhite;
+  /* Make the links block elements */
+}
+
+/* Change color on hover */
+.dropdown-contentmyaccount a:hover {
+  background-color: #f1f1f1;
+  z-index: 3;
+  /* Background color on hover */
+}
+
+/* Show the dropdown content when the dropdown is hovered over */
+.dropdownmyaccount:hover .dropdown-contentmyaccount {
+  display: block;
+}
+
+/* Style for the dash separator */
+.dash {
+  margin: 0 10px;
+}
+
+.sidebar-btn {
+  display: none;
+}
+
+.logo3 {
+  display: none;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    gap: 5px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .navmain {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .navchild {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 11px; 
+   }
+
+  .link1 {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 30px;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    gap: 5px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .navmain {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .navchild {
+    gap: 1px;
+    margin: -17px;
+  }
+
+  .link1 {
+    background: none;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 25px;
+  }
+
+
+
+}
+
+
+
+@media (max-width: 440px) {
+  .sidebarbutton {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar-btn {
+
+    display: flex;
+    align-items: center;
+    height: 33px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    padding: 1px;
+    width: 100%;
+  }
+  
+  .nav-linkss button {
+    font-family: arial, lato;
+    background-color: #080808;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+
+  }
+
+  .logo3 {
+    display: block;
+    width: 85%;
+  }
+
+  .logo {
+    width: 85%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  .couponcode {
+    width: 100%;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    gap: 5px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .navmain {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    margin-top: -8px;
+  }
+
+  .navchild {
+    display: none;
+  }
+
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  /* Adjust the width as needed */
+  background-color: white;
+  z-index: 1000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease;
+  /* Add a transition for smoother animation */
+  transform: translateX(-100%);
+  /* Move the sidebar off-screen initially */
+}
+
+/* Additional styles for links, sub-headings, etc. */
+
+/* Button to close the sidebar */
+.sidebar-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: black;
+  border: none;
+  font-size: 24px;
+  color: #f1eaea;
+  font-weight: 600;
+  border: 1px solid #0c0c0c;
+  border-radius: 50%;
+}
+
+/* Styles for the overlay when the sidebar is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+  /* Make the overlay clickable to close the sidebar */
+  cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 380px */
+@media (max-width: 440px) {
+  .sidebar {
+    transform: translateX(0);
+    overflow-y: auto;
+    max-height: 100%;
+  }
+
+  .overlay {
+    display: block;
+  }
+
+  .logomain {
+    background-color: #ffdd00;
+    height: 60px;
+  }
+
+  .menu-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid;
+  }
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}

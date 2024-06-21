@@ -1,0 +1,409 @@
+.slide {
+  margin-top: 120px;
+}
+
+.sliderimg {
+  max-width: 101%;
+  height: auto;
+  margin-left: -7px;
+  margin-right: 0px;
+}
+
+.cashback-swipper {
+  position: relative;
+  overflow: hidden;
+  height: 75%;
+  margin-top: 50px;
+  margin-left: auto;
+  align-items: center;
+  z-index: -1;
+}
+
+.cashback-swipper1 {
+  max-width: 1130px;
+  overflow: hidden;
+  margin-left: 190px;
+}
+
+.image-slider {
+  display: flex;
+  animation: slide 40s linear infinite;
+}
+
+.image-sliderfeatured {
+  display: flex;
+  animation: slide 10s linear infinite;
+  width: 87px;
+  height: 90px;
+  gap: 100px;
+}
+
+.featuredonhead {
+  text-align: center;
+}
+
+.featuresec {
+  margin-top: 70px;
+  font-size: 43px;
+  border-bottom: 4px solid #f8eb27;
+  line-height: 0;
+  color: #000000;
+  text-align: center;
+  margin-left: 65px;
+  margin-right: 65px;
+  margin-bottom: 50px;
+}
+
+.image-slide {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-save-image {
+  border-radius: 20px;
+}
+
+.small-save-image {
+  border-radius: 20px;
+}
+
+.image-slider img {
+  width: 75%;
+  height: 75%;
+  flex: 0 0 100%;
+  margin-right: 40px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+/* shirt image css */
+.shirt-image {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  /* max-width: 1200px; */
+  /* margin-left: 155px; */
+  gap: 20px;
+}
+
+.shirt-image img {
+  height: 340px;
+  width: 553px;
+  border-radius: 12px;
+}
+
+/* big saving zone css  */
+
+p.headaing-zone {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #343434;
+  border-left: 4px solid #f9eb28;
+  text-align: left;
+  padding: 5px;
+  margin-left: 190px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.big-saving-zone .image-slider .big-save-image {
+  width: 370px;
+}
+
+.saving-zone-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saving-zone-2 button {
+  width: 50px;
+  height: 80px;
+  border: none;
+}
+
+.big-save-image {
+  border-radius: 20px;
+}
+
+.small-save-image {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .sliderimg {
+    width: 101%;
+    height: auto;
+    margin-left: -7px;
+    margin-right: 0px;
+  }
+
+  .cashback-swipper {
+    position: relative;
+    overflow: hidden;
+    height: 75%;
+    margin-top: 100px;
+    margin-left: 195px;
+    align-items: center;
+    z-index: -1;
+    max-width: 1122px;
+  }
+
+  .shirt-image {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+
+    gap: 20px;
+  }
+
+  .shirt-image img {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .image-slide {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .saving-zone-2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .big-saving-zone {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cashback-swipper {
+    position: relative;
+    overflow: hidden;
+    /* height: 56%; */
+    margin-top: 60px;
+    margin-left: auto;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .shirt-image {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+
+    gap: 20px;
+  }
+
+  .shirt-image img {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  /* big saving zone css  */
+
+  p.headaing-zone {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #343434;
+    border-left: 4px solid #f9eb28;
+    text-align: left;
+    padding: 5px;
+    margin-left: 190px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  .big-saving-zone .image-slider .big-save-image {
+    width: 370px;
+  }
+
+  .saving-zone-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .saving-zone-2 button {
+    width: 50px;
+    height: 80px;
+    border: none;
+  }
+}
+
+/* Add this media query for 380px width */
+@media screen and (max-width: 440px) {
+  /* Adjustments for 380px width */
+
+  .cashback-swipper {
+    margin-left: opx;
+
+    /* Adjust the left margin as needed */
+  }
+
+  .shirt-image {
+    margin-left: 10px;
+    /* Adjust the left margin as needed */
+  }
+
+  .shirt-image img {
+    width: 100%;
+    /* Adjust the image width as needed */
+    height: auto;
+  }
+
+  p.headaing-zone {
+    margin-left: 10px;
+    /* Adjust the left margin as needed */
+  }
+
+  .big-saving-zone .image-slider .big-save-image {
+    width: 100%;
+    /* Adjust the image width as needed */
+  }
+
+  .saving-zone-2 button {
+    width: 30px;
+    /* Adjust the button width as needed */
+    height: 50px;
+    /* Adjust the button height as needed */
+  }
+}
+
+/* shirtimages */
+@media screen and (max-width: 480px) {
+  .shirt-image {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: -25px;
+  }
+
+  .shirt-image img {
+    width: 100%;
+    height: auto;
+  }
+  .cashback-swipper{
+    margin-top: 80px;
+  }
+}
+
+/* .big-saving-zone */
+
+@media screen and (max-width: 480px) {
+  .big-saving-zone {
+    padding: 0 10px;
+    /* Adjust the padding as needed */
+  }
+
+  .big-saving-zone p.headaing-zone {
+    margin-left: 10px;
+    text-align: center;
+    /* Center the heading */
+  }
+
+  .saving-zone-2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .previmage1,
+  .nextimage1 {
+    width: 20px;
+    /* Adjust the size of the prev/next buttons */
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 10px;
+    /* Adjust the margin between columns */
+  }
+
+  .small-save-image {
+    width: 100%;
+    /* Make images take full width of the container */
+    height: auto;
+    margin-bottom: -20px;
+  }
+
+  .big-save-image {
+    width: 100%;
+    /* Make images take full width of the container */
+    height: 93%;
+    border-radius: 12px;
+  }
+}
+
+/* featuredon */
+
+/* Add media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .cashback-swipper1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .featuresec {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide {
+    margin-top: 120px;
+    width: 106%;
+    margin-left: -9px;
+  }
+
+  .sliderimg {
+    width: 100%;
+    margin-bottom: -65px;
+    margin-top: -2px;
+    margin-left: 2px;
+  }
+
+  .cashback-swipper1 {
+    margin-left: 17px;
+    margin-right: -13px;
+  }
+
+  .image-sliderfeatured {
+    width: 100%;
+    gap: 5px;
+    /* Adjust the gap further for even smaller screens */
+  }
+
+  .image-sliderfeatured img {
+    width: 100%;
+    height: auto;
+  }
+
+  .featuresec {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
